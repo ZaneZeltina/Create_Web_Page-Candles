@@ -1,0 +1,14 @@
+<svg width="20.000000" height="19.988037" viewBox="0 0 20 19.988" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip57_965">
+			<rect id="ic:sharp-phone" width="20.000000" height="19.987957" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="ic:sharp-phone" width="20.000000" height="19.987957" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip57_965)">
+		<path id="Vector" d="M17.5 12.87L13.1 12.36L11 14.46C8.64 13.26 6.71 11.34 5.51 8.97L7.62 6.87L7.11 2.49L2.52 2.49C2.04 10.97 9.01 17.94 17.5 17.46L17.5 12.87Z" fill="#BEA495" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
