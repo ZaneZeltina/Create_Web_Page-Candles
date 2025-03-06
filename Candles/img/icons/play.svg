@@ -1,0 +1,14 @@
+<svg width="95.000000" height="95.000000" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip57_1039">
+			<rect id="material-symbols:play-circle" width="95.000000" height="95.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="material-symbols:play-circle" width="95.000000" height="95.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip57_1039)">
+		<path id="Vector" d="M37.6 65.31L65.31 47.49L37.6 29.68L37.6 65.31ZM47.5 87.08C42.02 87.08 36.87 86.04 32.06 83.96C27.24 81.88 23.05 79.06 19.49 75.5C15.93 71.94 13.11 67.75 11.03 62.93C8.95 58.12 7.91 52.97 7.91 47.49C7.91 42.02 8.95 36.87 11.03 32.06C13.11 27.24 15.93 23.05 19.49 19.49C23.05 15.93 27.24 13.11 32.06 11.03C36.87 8.95 42.02 7.91 47.5 7.91C52.97 7.91 58.12 8.95 62.93 11.03C67.75 13.11 71.94 15.93 75.5 19.49C79.06 23.05 81.88 27.24 83.96 32.06C86.04 36.87 87.08 42.02 87.08 47.49C87.08 52.97 86.04 58.12 83.96 62.93C81.88 67.75 79.06 71.94 75.5 75.5C71.94 79.06 67.75 81.88 62.93 83.96C58.12 86.04 52.97 87.08 47.5 87.08Z" fill="#BDBDBD" fill-opacity="0.870000" fill-rule="nonzero"/>
+	</g>
+</svg>
