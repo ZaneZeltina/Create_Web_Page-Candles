@@ -58,6 +58,7 @@ html {
  .button {
   padding: 16px 50px;
   background-color: #ffb059;
+  color: #272727;
   font-weight: 600;
   font-size: 14px;
   font-family: "Comfortaa", cursive;
@@ -65,6 +66,7 @@ html {
 
  .button:hover {
   background-color: #fff8f3;
+  color: #272727;
   border: 2px solid #ffb059;
   padding: 14px 48px;
   transition: 0.3s ease-in-out;
@@ -123,6 +125,7 @@ html {
  .header-menu__link,
  .footer-menu__link {
   text-transform: uppercase;
+  color: #333;
  }
 
  .header-menu__link:hover,
@@ -133,6 +136,7 @@ html {
 
  .header-phone {
   position: relative;
+  color: #333;
  }
  
  .header-phone:hover {
@@ -483,7 +487,8 @@ html {
  }
 
  .certificates__description {
-  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 340px;
  }
 
  .certificates__content {
@@ -492,35 +497,145 @@ html {
 
  .certificates__slider {
   width: 1135px;
+  margin: 0 auto;
   overflow: hidden;
  }
 
  .certificates__content .swiper-pagination {
-  text-align: left;
   bottom: 60px;
  }
 
- 
+ .accordion {
 
+ }
 
+ .accordion__item {
+  background-color: #fafafa;
+  margin-bottom: 10px;
+ }
 
+ .accordion__title {
+  font-family: "Yeseva One", cursive;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  padding: 16px 50px 16px 13px;
+  position: relative;
+ }
 
+ .accordion__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icons/arrow.svg");
+  width: 16px;
+  height: 16px;
+  right: 26px;
+  top: 17px;
+ }
 
+ .accordion__title.accordion__title--active::after {
+  transform: rotate(180deg);
+ }
 
+ .accordion__text {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s, max-height 0.4s;
+ }
 
- 
+ .accordion__list {
+  padding: 20px 40px;
+ }
+ .accordion__text.accordion__text--visible {
+  opacity: 1;
 
+ }
 
+ .promo {
+  background: url("../img/promo.jpg") 50% / cover no-repeat;
+  padding: 140px 0;
+ }
 
+ .promo__inner {
+  display: flex;
+  align-items: center;
+ }
 
+ .promo__text {
+  font-size: 40px;
+  color: #fafafa;
+  font-family: "Yeseva One", cursive;
+  padding-left: 56px;
+  max-width: 766px;
+  margin-right: 110px;
+ }
 
+ .promo__link {
+  background-color: #ffb059;
+  color: #272727;
+  display: inline-block;
+  padding: 16px 50px;
+  font-weight: 600;
+ }
 
+ .promo__link:hover {
+  background-color: #fff8f3;
+  color: #272727;
+  border: 2px solid #ffb059;
+  padding: 14px 48px;
+  transition: 0.3s ease-in-out;
+ }
 
+ .contacts {
+  padding: 150px 0 50px;
+ }
 
+ .contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
 
+ .form {
+  background-color: #fff;
+  width: 664px;
+  padding: 75px 42px 67px;
+ }
 
+ .form__title {
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 60px;
+  font-size: 40px;
+ }
 
+ .form__input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  color: #000;
+ }
 
+ .form__input::placeholder {
+  color: #d3d3d3;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+ }
+
+ .form__input:focus {
+  outline: none;
+ }
+
+ .form__btn {
+  margin-top: 36px;
+ }
 
  .footer {
   background-color: #fff;
@@ -534,6 +649,9 @@ html {
   align-items: center;
  }
 
+ .footer-phone {
+  color: #333;
+ }
  .footer-phone:hover {
   color: #ffb059;
   transition: 0.3s ease-in-out;
@@ -546,6 +664,7 @@ html {
 
  .email {
   margin: 17px 0;
+  color: #333;
  }
 
  .email:hover {
@@ -558,23 +677,16 @@ html {
   gap: 15px;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1100px) {
+  .promo__link {
+    min-width: 135px;
+    text-align: center;
+  }
+  .promo__text {
+    padding-left: 0;
+    margin-right: 60px;
+  }
+}
 
  @media (max-width: 1050px) {
   .steps__list {
@@ -635,6 +747,36 @@ html {
   .team__content {
     gap: 30px 20px;
   }
+  .feedback__inner {
+    grid-template-columns: 260px auto;
+  }
+  .feedback__slider {
+    width: 690px;
+  }
+  .certificates__description {
+    width: 290px;
+  }
+  .certificates__img {
+    width: 280px;
+  }
+  .certificates__slider {
+    margin: 0 auto;
+    width: 570px;
+  }
+  .contacts__img {
+    object-fit: cover;
+    width: 335px;
+  }
+  .form {
+    width: 592px;
+    padding: 70px 25px;
+  }
+}
+
+@media (max-width: 950px) {
+  .promo__link {
+    min-width: 180px;
+  }
 }
 
  @media (max-width: 900px) {
@@ -650,7 +792,7 @@ html {
     justify-content: center;
   }
   .section__inner {
-    grid-template-columns: 200px auto;
+    grid-template-columns: 250px auto;
   }
   .products__content {
     gap: 30px 16px;
@@ -684,6 +826,36 @@ html {
     bottom: 12px;
     right: 45px;
     width: 140px;
+  }
+  .certificates__description {
+    width: 260px;
+  }
+  .certificates__title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .certificates__slider {
+    width: 490px;
+    margin: 0 auto;
+  }
+  .certificates__img {
+    width: 240px;
+  }
+  .promo__text {
+    font-size: 30px;
+  }
+ }
+
+ @media (max-width: 800px) {
+  .certificates__description {
+    width: 250px;
+  }
+  .certificates__slider {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .certificates__img {
+    width: 220px;
   }
  }
 
@@ -827,6 +999,114 @@ html {
   .team__item-text {
     font-size: 7px;
   }
+  .feedback__item-video {
+    width: 200px;
+  }
+  .feedback__item-img {
+    width: 200px;
+  }
+  .feedback__content .swiper-pagination {
+    bottom: 50px;
+  }
+  .feedback__slider {
+    width: 446px;
+  }
+  .feedback__item-content {
+    padding-bottom: 45px;
+  }
+  .feedback__item-text {
+    margin-bottom: 5px;
+    font-size: 8px;
+  }
+  .feedback-social__img {
+    margin-bottom: 0px;
+  }
+  .feedback__item-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  .feedback__content {
+    padding-bottom: 80px;
+  }
+  .feedback__btn {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 30px
+  }
+  .certificates {
+    margin-bottom: 50px;
+  }
+  .certificates__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .certificates__description {
+    width: 210px;
+  }
+  .certificates__img {
+    width: 200px;
+  }
+  .certificates__slider {
+    width: 410px;
+    margin: 0 auto;
+  }
+  .certificates__content .swiper-pagination {
+    bottom: 50px;
+  }
+  .certificates__content {
+    padding-bottom: 80px;
+  }
+  .certificates__img {
+    width: 200px;
+  }
+  .questions__inner {
+    display: block;
+  }
+  .questions__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .accordion__title {
+    font-size: 14px;
+  }
+  .accordion__text {
+    font-size: 10px;
+  }
+  .promo {
+    padding: 67px 0;
+  }
+  .promo__text {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+  .promo__link {
+    padding: 12px 30px;
+    font-size: 12px;
+    min-width: 135px;
+  }
+  .contacts {
+    padding: 50px 0;
+  }
+  .contacts__img {
+    width: 187px;
+  }
+  .form {
+    width: 440px;
+    padding: 30px 22px;
+  }
+  .form__title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .form__btn {
+    margin-top: 10px;
+  }
+  .questions {
+    margin-bottom: 50px;
+  }
  }
 
  @media (max-width: 640px) {
@@ -873,10 +1153,31 @@ html {
     place-self: center;
     padding-left: 0;
   }
+  .feedback {
+    margin-bottom: 30px;
+  }
+  .certificates__slider {
+    width: 420px;
+    margin: 0 auto;
+  }
+  .certificates__description {
+    width: 400px;
+    margin: 0 auto 30px;
+  }
   .footer {
     font-size: 14px;
   }
   
+ }
+
+ @media (max-width: 550px) {
+  .certificates__slider {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .certificates__img {
+    width: 190px;
+  }
  }
 
  @media (max-width: 500px) {
@@ -966,6 +1267,47 @@ html {
   .team__content {
     padding-bottom: 0;
   }
+  .feedback.section {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .feedback__slider {
+    width: 390px;
+  }
+   .feedback__item-video {
+    width: 180px;
+  }
+  .feedback__item-img {
+    width: 180px;
+  }
+  .feedback__item-content {
+    width: 190px;
+  }
+  .certificates {
+    margin-bottom: 10px;
+  }
+  .certificates__slider {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .questions {
+    margin-bottom: 10px;
+  }
+  .promo {
+    padding: 40px 0;
+  }
+  .promo__text {
+    font-size: 15px;
+    margin: 0 30px;
+  }
+  .promo__link {
+    font-size: 8px;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+  .contacts__img {
+    display: none;
+  }
   .footer {
     padding: 50px 0;
   }
@@ -978,6 +1320,19 @@ html {
   }
   .footer-menu__list {
     flex-direction: column;
+  }
+  .form__input::placeholder {
+    font-size: 10px;
+  }
+ }
+
+ @media (max-width: 460px) {
+  .certificates__slider {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .certificates__img {
+    width: 300px;
   }
  }
 
@@ -1002,24 +1357,63 @@ html {
     place-self: start;
   }
   .team__item-box {
-  padding: 14px 10px 15px;
-  bottom: 13px;
-  left: 148px;
-  width: 151px;
-  z-index: 2;
+   padding: 14px 10px 15px;
+   bottom: 13px;
+   left: 148px;
+   width: 151px;
+   z-index: 2;
  }
 
  .team__img {
-  width: 204px;
+   width: 204px;
  }
 
  .team__item-title {
-  font-size: 12px;
-  margin-bottom: 3px;
+   font-size: 12px;
+   margin-bottom: 3px;
  }
 
  .team__item-text {
-  font-size: 10px;
+   font-size: 10px;
+ }
+ .feedback__item {
+  grid-template-columns: auto;
+  text-align: center;
+ }
+ .feedback__item-content {
+  width: 250px;
+  margin: 0 auto;
+ }
+ .feedback-social__img {
+  margin-bottom: 10px;
+ }
+ .feedback__item-title {
+  margin-bottom: 10px;
+ }
+ .feedback__item-video {
+  width: 250px;
+  margin: 0 auto;
+ }
+ .feedback__item-img {
+  width: 230px;
+  margin: 0 auto 20px;
+ }
+ .feedback__slider {
+  width: 250px;
+  margin: 0 auto;
+ }
+ .feedback__btn {
+  position: static;
+ }
+ .certificates__slider {
+   width: 300px;
+   margin: 0 auto;
+ }
+ .certificates__img {
+  width: 300px;
+ }
+ .promo__text {
+  margin: 0 30px 0 0;
  }
 }
 
@@ -1102,4 +1496,11 @@ html {
   .courses__item-img {
     width: 255px;
   }
+  .certificates__slider {
+   width: 280px;
+   margin: 0 auto;
+ }
+ .certificates__img {
+   width: 280px;
+ }
 }
