@@ -125,7 +125,6 @@ html {
  .header-menu__link,
  .footer-menu__link {
   text-transform: uppercase;
-  color: #333;
  }
 
  .header-menu__link:hover,
@@ -136,7 +135,6 @@ html {
 
  .header-phone {
   position: relative;
-  color: #333;
  }
  
  .header-phone:hover {
@@ -664,7 +662,6 @@ html {
 
  .email {
   margin: 17px 0;
-  color: #333;
  }
 
  .email:hover {
@@ -1182,10 +1179,10 @@ html {
 
  @media (max-width: 500px) {
   .top {
-    padding: 30px 0 50px;
+    padding: 30px 0 0;
   }
   .top__content {
-    padding: 20px 0 100px;
+    padding: 20px 0;
   }
   .top__title {
     width: 180px;
@@ -1243,7 +1240,7 @@ html {
     gap: 30px 27px;
   }
   .section {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
   .section__description {
     margin: 0 auto 30px;
